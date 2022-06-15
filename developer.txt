@@ -1,0 +1,9 @@
+Welcome to git operations
+1. create the file
+2. add the file into staging area
+3. commit the changes into local repo
+4. create new branches if you required(default branch is master branch)	
+5. push the chnages from local repo(laptop) to remote repo (Github.com)
+6. clone complete local repo to remote repo
+7. pull the changes from remote to local repo
+8
