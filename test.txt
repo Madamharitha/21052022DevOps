@@ -69,6 +69,25 @@
   150  git diff main hotfix
   151  git push https://github.com/Madamharitha/21052022DevOps.git
   152  history
+   153  git push https://github.com/Madamharitha/21052022DevOps.git hotfix
+  154  git log --oneline main
+  155  git log --oneline hiotfix
+  156  git log --oneline hotfix
+  157  git pull main
+  158  git pull
+  159  git log --oneline main
+  160  pwd
+  161  git pull mainclear
+  162  pwd
+  163  cd ..
+  164  pwd
+  165  mkdir localrepo1
+  166  git status
+  167  git cherrypick
+  168  git cherry-pick
+  169  git log
+  170  history
+
 ===============================================================================================
 Administrator@EC2AMAZ-6U85KK9 MINGW64 ~/Desktop (master)
 $ ls
