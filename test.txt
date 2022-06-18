@@ -1,0 +1,22 @@
+1. add global credentails 
+	git config --global user.name "madamharitha"
+	git config --global user.email "madamharitha1997@gmail.com"
+2. clone github repository
+	git clone https://github.com/Madamharitha/21052022DevOps.git
+3. create one file inside the repository
+	touch test.txt
+	vi test.txt
+
+4. check the git status
+	git status
+5. add the change from working directory to staging area
+	git add .
+6. check the git status
+	git status
+7. commit the change from staging area to local repo
+	git commit -m "chnage has been done from staging area to local repo"
+8. push all chnages from local repo to remote repo(github account)
+	git push
+9. referesh the github and check the changes
+10. pull changes from remote to local repo
+	git pull
