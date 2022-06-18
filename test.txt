@@ -20,3 +20,331 @@
 9. referesh the github and check the changes
 10. pull changes from remote to local repo
 	git pull
+======================================================================================================================================================
+  103  git config --global user.name "madamharitha"
+  104  git config --global user.email "madamharitha1997@gmail.com"
+  105  ls
+  106  vi developer.txt
+  107  git clone https://github.com/Madamharitha/21052022DevOps.git
+  108  ls 
+  111  ls
+  112  pwd
+  113  ls
+  114  cd 21052022DevOps
+  115  pwd
+  116  touch developer.txt
+  117  ls
+  118  vi developer.txt
+  119  touch test.txt
+  120  ls
+  121  vi test.txt
+  122  git status
+  123  git add .
+  124  git status
+  125  git commit -m "test.txt file is added from staging area to local repo"
+  126  git branch
+  127  git branch hotfix
+  128  git branch
+  129  git push
+  130  git checkout hotfix
+  131  git branch
+  132  git log --onelone main
+  133  git log --oneline main
+  134  git log --oneline hotfix
+  135  touch bugfix.txt
+  136  vi bugfix.txt
+  137  git status
+  138  git add .
+  139  git status
+  140  git commit -m "bugfix.txt file added from staging to local repo "
+  141  git push
+  142  git log --oneline hotfix
+  143  git log --oneline main
+  144  ls
+  145  git checkout main
+  146  git branch
+  147  git merge main hotfix
+  148  git log --oneline main
+  149  git log --oneline hotfix
+  150  git diff main hotfix
+  151  git push https://github.com/Madamharitha/21052022DevOps.git
+  152  history
+===============================================================================================
+Administrator@EC2AMAZ-6U85KK9 MINGW64 ~/Desktop (master)
+$ ls
+ ChromeSetup.exe*                       desktop.ini       maven-operations/
+'EC2 Feedback.website'                  harithaacademy/
+'EC2 Microsoft Windows Guide.website'   localrepo/
+
+Administrator@EC2AMAZ-6U85KK9 MINGW64 ~/Desktop (master)
+$ cd localrepo
+
+Administrator@EC2AMAZ-6U85KK9 MINGW64 ~/Desktop/localrepo (master)
+$ ls
+abc.txt
+
+Administrator@EC2AMAZ-6U85KK9 MINGW64 ~/Desktop/localrepo (master)
+$ touch developer.txt
+
+Administrator@EC2AMAZ-6U85KK9 MINGW64 ~/Desktop/localrepo (master)
+$ git config --global user.name "madamharitha"
+
+Administrator@EC2AMAZ-6U85KK9 MINGW64 ~/Desktop/localrepo (master)
+$ git config --global user.email "madamharitha1997@gmail.com"
+
+Administrator@EC2AMAZ-6U85KK9 MINGW64 ~/Desktop/localrepo (master)
+$ ls
+abc.txt  developer.txt
+
+Administrator@EC2AMAZ-6U85KK9 MINGW64 ~/Desktop/localrepo (master)
+$ vi developer.txt
+
+Administrator@EC2AMAZ-6U85KK9 MINGW64 ~/Desktop/localrepo (master)
+$ git clone https://github.com/Madamharitha/21052022DevOps.git
+Cloning into '21052022DevOps'...
+remote: Enumerating objects: 6, done.
+remote: Counting objects: 100% (6/6), done.
+remote: Compressing objects: 100% (4/4), done.
+remote: Total 6 (delta 0), reused 3 (delta 0), pack-reused 0
+Receiving objects: 100% (6/6), done.
+
+Administrator@EC2AMAZ-6U85KK9 MINGW64 ~/Desktop/localrepo (master)
+$ ls
+21052022DevOps/  abc.txt  developer.txt
+
+Administrator@EC2AMAZ-6U85KK9 MINGW64 ~/Desktop/localrepo (master)
+$ pwd
+/c/Users/Administrator/Desktop/localrepo
+
+Administrator@EC2AMAZ-6U85KK9 MINGW64 ~/Desktop/localrepo (master)
+$ rm developer.txt
+
+Administrator@EC2AMAZ-6U85KK9 MINGW64 ~/Desktop/localrepo (master)
+$ ls
+21052022DevOps/  abc.txt
+
+Administrator@EC2AMAZ-6U85KK9 MINGW64 ~/Desktop/localrepo (master)
+$ cd
+.git/           21052022DevOps/ abc.txt
+
+Administrator@EC2AMAZ-6U85KK9 MINGW64 ~/Desktop/localrepo (master)
+$ pwd
+/c/Users/Administrator/Desktop/localrepo
+
+Administrator@EC2AMAZ-6U85KK9 MINGW64 ~/Desktop/localrepo (master)
+$ ls
+21052022DevOps/  abc.txt
+
+Administrator@EC2AMAZ-6U85KK9 MINGW64 ~/Desktop/localrepo (master)
+$ cd 21052022DevOps
+
+Administrator@EC2AMAZ-6U85KK9 MINGW64 ~/Desktop/localrepo/21052022DevOps (main)
+$ pwd
+/c/Users/Administrator/Desktop/localrepo/21052022DevOps
+
+Administrator@EC2AMAZ-6U85KK9 MINGW64 ~/Desktop/localrepo/21052022DevOps (main)
+$ touch developer.txt
+
+Administrator@EC2AMAZ-6U85KK9 MINGW64 ~/Desktop/localrepo/21052022DevOps (main)
+$ ls
+README.md  developer.txt
+
+Administrator@EC2AMAZ-6U85KK9 MINGW64 ~/Desktop/localrepo/21052022DevOps (main)
+$ vi developer.txt
+
+Administrator@EC2AMAZ-6U85KK9 MINGW64 ~/Desktop/localrepo/21052022DevOps (main)
+$ touch test.txt
+
+Administrator@EC2AMAZ-6U85KK9 MINGW64 ~/Desktop/localrepo/21052022DevOps (main)
+$ ls
+README.md  developer.txt  test.txt
+
+Administrator@EC2AMAZ-6U85KK9 MINGW64 ~/Desktop/localrepo/21052022DevOps (main)
+$ vi test.txt
+
+Administrator@EC2AMAZ-6U85KK9 MINGW64 ~/Desktop/localrepo/21052022DevOps (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        test.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Administrator@EC2AMAZ-6U85KK9 MINGW64 ~/Desktop/localrepo/21052022DevOps (main)
+$ git add .
+warning: LF will be replaced by CRLF in test.txt.
+The file will have its original line endings in your working directory
+
+Administrator@EC2AMAZ-6U85KK9 MINGW64 ~/Desktop/localrepo/21052022DevOps (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   test.txt
+
+
+Administrator@EC2AMAZ-6U85KK9 MINGW64 ~/Desktop/localrepo/21052022DevOps (main)
+$ git commit -m "test.txt file is added from staging area to local repo"
+[main 85551f6] test.txt file is added from staging area to local repo
+ 1 file changed, 22 insertions(+)
+ create mode 100644 test.txt
+
+Administrator@EC2AMAZ-6U85KK9 MINGW64 ~/Desktop/localrepo/21052022DevOps (main)
+$ git branch
+* main
+
+Administrator@EC2AMAZ-6U85KK9 MINGW64 ~/Desktop/localrepo/21052022DevOps (main)
+$ git branch hotfix
+
+Administrator@EC2AMAZ-6U85KK9 MINGW64 ~/Desktop/localrepo/21052022DevOps (main)
+$ git branch
+  hotfix
+* main
+
+Administrator@EC2AMAZ-6U85KK9 MINGW64 ~/Desktop/localrepo/21052022DevOps (main)
+$ git push
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 682 bytes | 682.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Madamharitha/21052022DevOps.git
+   8add35e..85551f6  main -> main
+
+Administrator@EC2AMAZ-6U85KK9 MINGW64 ~/Desktop/localrepo/21052022DevOps (main)
+$ git checkout hotfix
+Switched to branch 'hotfix'
+
+Administrator@EC2AMAZ-6U85KK9 MINGW64 ~/Desktop/localrepo/21052022DevOps (hotfix)
+$ git branch
+* hotfix
+  main
+
+Administrator@EC2AMAZ-6U85KK9 MINGW64 ~/Desktop/localrepo/21052022DevOps (hotfix)
+$ git log --onelone main
+fatal: unrecognized argument: --onelone
+
+Administrator@EC2AMAZ-6U85KK9 MINGW64 ~/Desktop/localrepo/21052022DevOps (hotfix)
+$ git log --oneline main
+85551f6 (HEAD -> hotfix, origin/main, origin/HEAD, main) test.txt file is added from staging area to local repo
+8add35e developer.txt file is created on local repo and now adding into staging area
+81aac23 Initial commit
+
+Administrator@EC2AMAZ-6U85KK9 MINGW64 ~/Desktop/localrepo/21052022DevOps (hotfix)
+$ git log --oneline hotfix
+85551f6 (HEAD -> hotfix, origin/main, origin/HEAD, main) test.txt file is added from staging area to local repo
+8add35e developer.txt file is created on local repo and now adding into staging area
+81aac23 Initial commit
+
+Administrator@EC2AMAZ-6U85KK9 MINGW64 ~/Desktop/localrepo/21052022DevOps (hotfix)
+$ touch bugfix.txt
+
+Administrator@EC2AMAZ-6U85KK9 MINGW64 ~/Desktop/localrepo/21052022DevOps (hotfix)
+$ vi bugfix.txt
+
+Administrator@EC2AMAZ-6U85KK9 MINGW64 ~/Desktop/localrepo/21052022DevOps (hotfix)
+$ git status
+On branch hotfix
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        bugfix.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Administrator@EC2AMAZ-6U85KK9 MINGW64 ~/Desktop/localrepo/21052022DevOps (hotfix)
+$ git add .
+warning: LF will be replaced by CRLF in bugfix.txt.
+The file will have its original line endings in your working directory
+
+Administrator@EC2AMAZ-6U85KK9 MINGW64 ~/Desktop/localrepo/21052022DevOps (hotfix)
+$ git status
+On branch hotfix
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   bugfix.txt
+
+
+Administrator@EC2AMAZ-6U85KK9 MINGW64 ~/Desktop/localrepo/21052022DevOps (hotfix)
+$ git commit -m "bugfix.txt file added from staging to local repo "
+[hotfix 6597bc8] bugfix.txt file added from staging to local repo
+ 1 file changed, 2 insertions(+)
+ create mode 100644 bugfix.txt
+
+Administrator@EC2AMAZ-6U85KK9 MINGW64 ~/Desktop/localrepo/21052022DevOps (hotfix)
+$ git push
+fatal: The current branch hotfix has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin hotfix
+
+
+Administrator@EC2AMAZ-6U85KK9 MINGW64 ~/Desktop/localrepo/21052022DevOps (hotfix)
+$ git log --oneline hotfix
+6597bc8 (HEAD -> hotfix) bugfix.txt file added from staging to local repo
+85551f6 (origin/main, origin/HEAD, main) test.txt file is added from staging area to local repo
+8add35e developer.txt file is created on local repo and now adding into staging area
+81aac23 Initial commit
+
+Administrator@EC2AMAZ-6U85KK9 MINGW64 ~/Desktop/localrepo/21052022DevOps (hotfix)
+$ git log --oneline main
+85551f6 (origin/main, origin/HEAD, main) test.txt file is added from staging area to local repo
+8add35e developer.txt file is created on local repo and now adding into staging area
+81aac23 Initial commit
+
+Administrator@EC2AMAZ-6U85KK9 MINGW64 ~/Desktop/localrepo/21052022DevOps (hotfix)
+$ ls
+README.md  bugfix.txt  developer.txt  test.txt
+
+Administrator@EC2AMAZ-6U85KK9 MINGW64 ~/Desktop/localrepo/21052022DevOps (hotfix)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+Administrator@EC2AMAZ-6U85KK9 MINGW64 ~/Desktop/localrepo/21052022DevOps (main)
+$ git branch
+  hotfix
+* main
+
+Administrator@EC2AMAZ-6U85KK9 MINGW64 ~/Desktop/localrepo/21052022DevOps (main)
+$ git merge main hotfix
+Updating 85551f6..6597bc8
+Fast-forward
+ bugfix.txt | 2 ++
+ 1 file changed, 2 insertions(+)
+ create mode 100644 bugfix.txt
+
+Administrator@EC2AMAZ-6U85KK9 MINGW64 ~/Desktop/localrepo/21052022DevOps (main)
+$ git log --oneline main
+6597bc8 (HEAD -> main, hotfix) bugfix.txt file added from staging to local repo
+85551f6 (origin/main, origin/HEAD) test.txt file is added from staging area to local repo
+8add35e developer.txt file is created on local repo and now adding into staging area
+81aac23 Initial commit
+
+Administrator@EC2AMAZ-6U85KK9 MINGW64 ~/Desktop/localrepo/21052022DevOps (main)
+$ git log --oneline hotfix
+6597bc8 (HEAD -> main, hotfix) bugfix.txt file added from staging to local repo
+85551f6 (origin/main, origin/HEAD) test.txt file is added from staging area to local repo
+8add35e developer.txt file is created on local repo and now adding into staging area
+81aac23 Initial commit
+
+Administrator@EC2AMAZ-6U85KK9 MINGW64 ~/Desktop/localrepo/21052022DevOps (main)
+$ git diff main hotfix
+
+Administrator@EC2AMAZ-6U85KK9 MINGW64 ~/Desktop/localrepo/21052022DevOps (main)
+$ git push https://github.com/Madamharitha/21052022DevOps.git
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 418 bytes | 418.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Madamharitha/21052022DevOps.git
+   85551f6..6597bc8  main -> main
+
+==============================================================================================
