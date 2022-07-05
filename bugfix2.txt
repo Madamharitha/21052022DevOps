@@ -1,0 +1,1 @@
+bugfix2.txt file is created in feature branch
